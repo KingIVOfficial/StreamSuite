@@ -1,0 +1,16 @@
+node_modules/
+npm-debug.log*
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Keep the deploy small: these are local upload caches, not application source.
+data/uploads/
+public/uploads/*
+!public/uploads/f24f25fa-c710-450c-b172-116262e93bb9-image1.png
+!public/uploads/f24f25fa-c710-450c-b172-116262e93bb9-image2.png
+!public/uploads/f24f25fa-c710-450c-b172-116262e93bb9-image3.png
+!public/uploads/c6cb22b5-e09b-40ea-ace0-caf66d9c70e4-image1.png
+!public/uploads/c6cb22b5-e09b-40ea-ace0-caf66d9c70e4-image2.png
+!public/uploads/c6cb22b5-e09b-40ea-ace0-caf66d9c70e4-image3.png

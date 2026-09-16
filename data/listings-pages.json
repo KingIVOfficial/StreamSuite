@@ -1,0 +1,44 @@
+{
+  "pages": [
+    {
+      "id": 1,
+      "name": "Home",
+      "slug": "home",
+      "listings": [
+        {
+          "id": "f24f25fa-c710-450c-b172-116262e93bb9",
+          "slug": "neon-blue-custom-twitch-panels",
+          "title": "Neon Blue Custom Twitch Panels",
+          "price": 3.99,
+          "description": "15 pack of Custom Neon Blue Twitch panels + 2 Bonus panels for a total of 17 Panels. \nBring Your Stream To Life With StreamSuite!",
+          "image1": "/uploads/f24f25fa-c710-450c-b172-116262e93bb9-image1.png",
+          "image2": "/uploads/f24f25fa-c710-450c-b172-116262e93bb9-image2.png",
+          "image3": "/uploads/f24f25fa-c710-450c-b172-116262e93bb9-image3.png",
+          "stripeLink": "https://buy.stripe.com/3cIdRb7UZ4WxaeQfVqaR202",
+          "downloadUrl": "https://www.dropbox.com/scl/fo/e84tfoxr9861qzavkpdzb/AHbdfNPsMCxk-Unql9oMI7I?rlkey=dw1jw0w118zjslp8q7gvlxrf9&st=0somancv&dl=0",
+          "createdAt": "2026-09-16T02:03:23.370Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Listing Page 2",
+      "slug": "listing-page-2",
+      "listings": [
+        {
+          "id": "c6cb22b5-e09b-40ea-ace0-caf66d9c70e4",
+          "slug": "is-it",
+          "title": "Is It?",
+          "price": 3.99,
+          "description": "Yes",
+          "image1": "/uploads/c6cb22b5-e09b-40ea-ace0-caf66d9c70e4-image1.png",
+          "image2": "/uploads/c6cb22b5-e09b-40ea-ace0-caf66d9c70e4-image2.png",
+          "image3": "/uploads/c6cb22b5-e09b-40ea-ace0-caf66d9c70e4-image3.png",
+          "stripeLink": "https://buy.stripe.com/3cIdRb7UZ4WxaeQfVqaR202",
+          "downloadUrl": "https://www.dropbox.com/scl/fo/e84tfoxr9861qzavkpdzb/AHbdfNPsMCxk-Unql9oMI7I?rlkey=dw1jw0w118zjslp8q7gvlxrf9&st=0somancv&dl=0",
+          "createdAt": "2026-09-16T01:32:21.349Z"
+        }
+      ]
+    }
+  ]
+}

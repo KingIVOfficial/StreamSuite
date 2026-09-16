@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= (typeof title !== 'undefined' && title) ? title : 'StreamSuite' %></title>
+  <meta name="description" content="<%= (typeof description !== 'undefined' && description) ? description : 'Premium neon stream overlays and digital assets.' %>">
+  <meta property="og:title" content="<%= (typeof title !== 'undefined' && title) ? title : 'StreamSuite' %>">
+  <meta property="og:description" content="<%= (typeof description !== 'undefined' && description) ? description : 'Premium neon stream overlays and digital assets.' %>">
+  <meta property="og:image" content="<%= (typeof ogImage !== 'undefined' && ogImage) ? ogImage : '/images/og-default.jpg' %>">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">StreamSuite</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/bio">Bio</a>
+      <span id="listingPageNav" aria-label="Listing pages"></span>
+    </nav>
+  </header>
+
+  <section class="hero" aria-label="StreamSuite hero">
+    <div class="hero-image-frame">
+      <img src="/hero/Banner_RenderRealm3000_Gpt.png" class="hero-image" alt="RenderRealm creator assets and stream tools banner">
+    </div>
+    <div class="hero-inner">
+      <p class="eyebrow">Cinematic creator toolkit</p>
+      <h1 class="hero-brand">Bring Your Stream To Life</h1>
+      <p class="hero-credit">by RenderRealm</p>
+    </div>
+  </section>
+
+  <main class="container"><%- body %></main>
+
+  <footer class="site-footer">StreamSuite digital assets</footer>
+
+  <div class="modal" id="pinModal" hidden>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="pinModalTitle">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">&times;</button>
+      <p class="eyebrow">Admin access</p>
+      <h2 id="pinModalTitle">Enter Admin PIN</h2>
+      <form id="pinForm">
+        <label for="adminPin">PIN</label>
+        <input id="adminPin" name="adminPin" type="password" inputmode="numeric" autocomplete="off" required>
+        <p class="form-error" id="pinError" hidden>Incorrect PIN.</p>
+        <div class="modal-actions"><button class="button" type="submit">Continue</button><button class="button button-secondary" type="button" data-close-modal>Cancel</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal" id="listingModal" hidden>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="listingModalTitle">
+      <button class="modal-close" type="button" data-close-modal aria-label="Close">&times;</button>
+      <p class="eyebrow">New listing</p>
+      <h2 id="listingModalTitle">Add Listing</h2>
+      <form id="listingForm" novalidate>
+        <input id="titleInput" name="title" placeholder="Title" required>
+        <input id="priceInput" name="price" type="number" min="0.01" step="0.01" placeholder="Price" aria-label="Price" required>
+        <textarea id="descriptionInput" name="description" placeholder="Description" required></textarea>
+        <label>Image 1<input id="image1Input" name="image1" type="file" accept="image/*" required></label>
+        <label>Image 2<input id="image2Input" name="image2" type="file" accept="image/*" required></label>
+        <label>Image 3<input id="image3Input" name="image3" type="file" accept="image/*" required></label>
+        <input id="stripeInput" name="stripeLink" type="url" placeholder="Stripe payment link" required>
+        <input id="downloadInput" name="downloadUrl" type="url" placeholder="Download URL" required>
+        <p class="form-error" id="listingFormError" hidden></p>
+        <button class="button" id="createListingBtn" type="submit">Create Listing</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<section class="success-page">
+  <video autoplay muted loop playsinline class="success-video">
+    <source src="/media/success.mp4" type="video/mp4">
+  </video>
+  <canvas id="confetti"></canvas>
+  <div class="success-bg"></div>
+  <div class="success-container">
+    <p class="eyebrow">Order confirmed</p>
+    <h1 class="success-title">Transaction Successful</h1>
+    <h2 class="success-subtitle"><%= listing.title %></h2>
+    <a class="download-btn" href="<%= listing.downloadUrl %>" download>Download Now</a>
+    <div class="success-outro">
+      <h3>Thank you for supporting StreamSuite</h3>
+      <p>Your digital asset is ready to download.</p>
+    </div>
+  </div>
+</section>
